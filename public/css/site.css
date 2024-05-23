@@ -317,7 +317,12 @@ button {
     padding: 25px 12px 0px 12px;
     overflow: hidden;
     box-shadow: 0px 0px 5px 0px white;
-    transition: width 0.5s, height 0.5s;
+    transition: 0.5s ease;
+}
+
+#beneficios .card-beneficios:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 14px 0px #b0b0b0;
 }
 
 .img-card {
@@ -347,11 +352,6 @@ button {
     font-size: 33px;
 }
 
-#beneficios .card-beneficios:hover {
-    width: 29%;
-    height: 56.5vh;
-    box-shadow: 0px 0px 14px 0px #b0b0b0;
-}
 
 .card-beneficios::before {
     content: "";
@@ -542,7 +542,31 @@ section.card {
 }
 
 .rodape {
-    width: 100%;
-    height: 28vh;
     background-color: #06070f;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icone {
+    cursor: pointer;
+    padding: 0 8px 0 8px;
+    width: 38px;
+    max-width: 38px;
+}
+
+.posicao-icones{
+    display: flex;
+}
+
+.text-rodape {
+    padding-top: 40px;
+}
+
+.text-rodape p {
+    color: darkgray;
+    font-size: 13px;
 }
